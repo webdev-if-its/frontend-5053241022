@@ -41,7 +41,7 @@ git commit adalah ketika programmer menyimpan perubahan yang ada di kode di kont
 contoh situasinya misal ada anggota tim yang commit satu modul fitur aplikasi tetapi lupa untuk push kodenya. akibatnya, anggota tim lain yang pull dari github tidak melihat adanya pembaruan dari modul fitur tersebut dan bisa saja mengerjakannya sendiri dari awal. ini mengakibatkan adanya pemborosan waktu karena tim jadi mengerjakan ulang modul yang sebenarnya sudah dikerjakan sebelumnya.
 
 ## JSX vs TSX
-(tulis di sini)
+.jsx itu adalah ekstensi untuk file javascript yang digunakan agar bisa menulis UI seperti HTML langsung didalamnya. sedangkan .tsx adalah file typescript yang didalamnya ada jsx juga karena typescript itu superset dari javascript. project ini menggunakan .tsx karena menggunakan typescript sehingga bisa diberi tipe data.
 
 ## Kenapa Union Type untuk Status
 (tulis di sini)
