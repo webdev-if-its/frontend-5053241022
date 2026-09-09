@@ -12,7 +12,7 @@ function App() {
 
   return (
     <main>
-      <h1>Pertemuan 1 — Kenalan Project React + TypeScript</h1>
+      <h1>Pertemuan 1 — Berkenalan dengan Project React + TypeScript pertama kali</h1>
       <p>
         Halaman ini berubah seiring level yang kamu selesaikan di{' '}
         <code>src/identitas.ts</code>. Jalankan <code>npm run levels</code> untuk
