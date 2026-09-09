@@ -36,7 +36,9 @@ sedangkan peran untuk App.tsx ini adalah file yang berisi kode untuk satu kompon
 - Kelas: M
 
 ## Commit vs Push
-(tulis di sini)
+git commit adalah ketika programmer menyimpan perubahan yang ada di kode di konteks lokal komputernya. sedangkan git push adalah ketika programmer mengirimkan perubahan kodenya ke atas, dari lokal komputer ke online agar bisa diakses oleh timnya.
+
+contoh situasinya misal ada anggota tim yang commit satu modul fitur aplikasi tetapi lupa untuk push kodenya. akibatnya, anggota tim lain yang pull dari github tidak melihat adanya pembaruan dari modul fitur tersebut dan bisa saja mengerjakannya sendiri dari awal. ini mengakibatkan adanya pemborosan waktu karena tim jadi mengerjakan ulang modul yang sebenarnya sudah dikerjakan sebelumnya.
 
 ## JSX vs TSX
 (tulis di sini)
