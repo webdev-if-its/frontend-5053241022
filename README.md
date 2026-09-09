@@ -27,12 +27,13 @@ Kalau dosen memperbaiki sesuatu di pertemuan yang sudah dirilis (mis. ada bug di
 Bagian di bawah ini **isi bertahap** sesuai level yang sedang kalian kerjakan (lihat `pertemuan-XX/SOAL.md`) — heading-nya dicek otomatis, jangan diganti namanya.
 
 ## Struktur Project
-(tulis di sini)
+peran main.tsx di dalam struktur project adalah sebagai satu file yang nantinya itu akan dipanggil pertama kali oleh react untuk dijalankan. di dalam file main.tsx ini nantinya bisa berisi komponen komponen lain yang akan dipanggil dan dijalankan contohnya seperti App.tsx tersebut. 
+sedangkan peran untuk App.tsx ini adalah file yang berisi kode untuk satu komponen spesifik yang akan digunakan berkali kali nantinya dan bisa dipanggil di main.tsx
 
 ## Identitas
-- Nama: (tulis di sini)
-- NRP: (tulis di sini)
-- Kelas: (tulis di sini)
+- Nama: Hanifah Dwi Setyowati
+- NRP: 5053241022
+- Kelas: M
 
 ## Commit vs Push
 (tulis di sini)
