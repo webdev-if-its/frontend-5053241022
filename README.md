@@ -44,7 +44,7 @@ contoh situasinya misal ada anggota tim yang commit satu modul fitur aplikasi te
 .jsx itu adalah ekstensi untuk file javascript yang digunakan agar bisa menulis UI seperti HTML langsung didalamnya. sedangkan .tsx adalah file typescript yang didalamnya ada jsx juga karena typescript itu superset dari javascript. project ini menggunakan .tsx karena menggunakan typescript sehingga bisa diberi tipe data.
 
 ## Kenapa Union Type untuk Status
-(tulis di sini)
+karena dengan menggunakan Union Type untuk status itu hanya memperbolehkan nilai dari status yang sudah ditentukan sebelumnya. misalkan seperti di level 6 status yang ada itu 3 yaitu pending, selesai dan batal. selain dari status yang ditentukan, nilai lainnya akan dianggap tidak valid dan dengan begitu status bisa jadi lebih konsisten dan kesalahan penulisan bisa terdeteksi.
 
 ## Refleksi
 (tulis di sini)
