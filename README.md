@@ -47,4 +47,4 @@ contoh situasinya misal ada anggota tim yang commit satu modul fitur aplikasi te
 karena dengan menggunakan Union Type untuk status itu hanya memperbolehkan nilai dari status yang sudah ditentukan sebelumnya. misalkan seperti di level 6 status yang ada itu 3 yaitu pending, selesai dan batal. selain dari status yang ditentukan, nilai lainnya akan dianggap tidak valid dan dengan begitu status bisa jadi lebih konsisten dan kesalahan penulisan bisa terdeteksi.
 
 ## Refleksi
-(tulis di sini)
+dari pertemuan ini, yang paling mengubah adalah untuk terbiasa dengan cara kerja JSX/TSX. karena kalau di HTML biasa, isinya hanya untuk menyusun elemen dari halaman tanpa logika apapun yang berjalan disitu, jadi hanya fokus di tampilan dan isi saja. sedangkan untuk JSX/TSX ini bisa memproses data langsung dan menampilkannya juga. jadi menggabungkan bagaimana menyusun elemen dan juga logikanya secara langsung.
