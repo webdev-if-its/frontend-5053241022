@@ -48,3 +48,6 @@ karena dengan menggunakan Union Type untuk status itu hanya memperbolehkan nilai
 
 ## Refleksi
 dari pertemuan ini, yang paling mengubah adalah untuk terbiasa dengan cara kerja JSX/TSX. karena kalau di HTML biasa, isinya hanya untuk menyusun elemen dari halaman tanpa logika apapun yang berjalan disitu, jadi hanya fokus di tampilan dan isi saja. sedangkan untuk JSX/TSX ini bisa memproses data langsung dan menampilkannya juga. jadi menggabungkan bagaimana menyusun elemen dan juga logikanya secara langsung.
+
+## Refleksi Pertemuan 3
+dari pertemuan 3, perbedaan yang paling terasa adalah bagaimana elemen itu ditampilkan. di pertemuan ini, elemen ditampilkan mengikuti kondisi tertentu sehingga terasa bahwa conditional rendering ini itu lebih dinamis dibandingkan HTML atau CSS biasa yang menampilkan elemen tanpa bergantung pada kondisi data.
