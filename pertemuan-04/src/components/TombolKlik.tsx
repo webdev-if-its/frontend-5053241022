@@ -3,6 +3,6 @@
 // bertuliskan "Klik Saya" yang, SAAT DIKLIK (bukan saat render), memanggil
 // onKlik dengan event klik-nya.
 // Lihat SOAL.md untuk kontrak lengkap.
-export function TombolKlik(props: any) {
-  return <button>TODO</button>
+export function TombolKlik(props: { onKlik: (e: React.MouseEvent<HTMLButtonElement>) => void }) {
+  return <button onClick={props.onKlik}>Klik Saya</button>
 }
