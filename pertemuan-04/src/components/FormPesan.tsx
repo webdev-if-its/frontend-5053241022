@@ -4,6 +4,32 @@
 // isi pesan (setelah trim) kosong. Saat submit: cegah reload, panggil
 // onKirim(pesan yang sudah di-trim), lalu kosongkan input.
 // Lihat SOAL.md untuk kontrak lengkap.
-export function FormPesan(props: any) {
-  return <p>TODO</p>
+import { useState } from 'react'
+
+export function FormPesan({ onKirim }: { onKirim: (pesan: string) => void }) {
+  const [pesan, setPesan] = useState<string>('')
+
+  const kosong = pesan.trim() === ''
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    if (kosong) return
+    onKirim(pesan.trim())
+    setPesan('')
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Pesan
+        <input
+          value={pesan}
+          onChange={(e) => setPesan(e.target.value)}
+        />
+      </label>
+      <button type="submit" disabled={kosong}>
+        Kirim
+      </button>
+    </form>
+  )
 }

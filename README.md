@@ -51,3 +51,6 @@ dari pertemuan ini, yang paling mengubah adalah untuk terbiasa dengan cara kerja
 
 ## Refleksi Pertemuan 3
 dari pertemuan 3, perbedaan yang paling terasa adalah bagaimana elemen itu ditampilkan. di pertemuan ini, elemen ditampilkan mengikuti kondisi tertentu sehingga terasa bahwa conditional rendering ini itu lebih dinamis dibandingkan HTML atau CSS biasa yang menampilkan elemen tanpa bergantung pada kondisi data.
+
+## Refleksi Pertemuan 4
+perbedaan dari variable biasa dan state adalah jika di variabel biasa nilainya itu tidak mengubah tampilan dan akan reset tiap rendering ulang komponen. sedanngkan untuk state nilainya akan disimpan oleh React dan jika diubah lewat setter dia akan dirender ulang sehingga tampilannya akan berubah. jadi tampilannya akan dinamis dan bukan statis lagi. e.target.value perlu diubah ke number dulu sebelum dihitung karena e.target.value itu selalu bertipe string. jadi kalau dihitung saat masih jadi string hasilnya tidak akan sesuai.
