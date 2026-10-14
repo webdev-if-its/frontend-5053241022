@@ -5,12 +5,17 @@
 //
 // export const BASE_URL = 'https://jsonplaceholder.typicode.com/todos'
 import type { Todo } from "../types"
+export const BASE_URL = 'https://jsonplaceholder.typicode.com/todos'
 
 // Level 1 & 2
 export async function getTodos(): Promise<Todo[]> {
-  const res = await fetch('https://jsonplaceholder.typicode.com/todos', {
+  const res = await fetch(BASE_URL, {
     method: 'GET',
   })
+
+  if (!res.ok) {
+    throw new Error('Gagal mengambil data')
+  }
 
   return res.json() as Promise<Todo[]>
 }
