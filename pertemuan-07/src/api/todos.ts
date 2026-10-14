@@ -42,8 +42,22 @@ export async function addTodo(title: string): Promise<Todo> {
 }
 
 // Level 4
-export async function updateTodo(id: any, completed: any): Promise<any> {
-  throw new Error('TODO')
+export async function updateTodo(id: number,completed: boolean): Promise<Todo> {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      completed,
+    }),
+  })
+
+  if (!res.ok) {
+    throw new Error('Gagal memperbarui data')
+  }
+
+  return res.json() as Promise<Todo>
 }
 
 // Level 5
