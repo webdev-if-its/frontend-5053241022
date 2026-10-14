@@ -5,6 +5,32 @@
 // Start lagi melanjutkan dari angka terakhir. Gunakan state `jalan` sebagai
 // dependency efek.
 // Lihat SOAL.md untuk kontrak lengkap.
-export function Stopwatch(props: any) {
-  return <p>TODO</p>
+import { useEffect, useState } from "react";
+
+export function Stopwatch() {
+  const [detik, setDetik] = useState<number>(0);
+  const [jalan, setJalan] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!jalan) {
+      return;
+    }
+
+    const intervalId = setInterval(() => {
+      setDetik((d) => d + 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [jalan]);
+
+  return (
+    <div>
+      <p>{detik} detik</p>
+      <button onClick={() => setJalan((j) => !j)}>
+        {jalan ? "Stop" : "Start"}
+      </button>
+    </div>
+  );
 }
